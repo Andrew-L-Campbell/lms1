@@ -1,0 +1,98 @@
+/* 
+Andrew Campbell
+LMS 1-League Home Page-Bootstrap
+06/22
+V1
+*/
+html{
+
+}
+head{
+    height: 200px;
+    
+}
+aside{
+
+}
+body{
+    
+    background-image: url(/img/back.jpg);
+}
+
+.aside{
+
+}
+
+.grid{
+    color: white;
+}
+.bar{
+    padding: 20px;
+}
+#aside{
+    background-color: white;
+    opacity: .8;
+    color: black;
+    opacity: .8;
+    
+}
+.homeImg{
+    width: 200px;
+    max-width: 40%;
+    height: auto;
+    display: block;
+    min-width: 100px;
+    
+}
+.teamsTable{
+    background-color: white;
+}
+.modalBody{
+    color: black;
+}
+#home-tab{
+    
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    
+}
+#home-tab:hover{
+    background-color: gray;
+    
+}
+#teams-tab{
+
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+
+}
+#teams-tab:hover{
+    background-color: gray;
+    
+}
+.logoName{
+    font-size: 25px;
+    display: block;
+    text-align: center;
+}
+.middleSection{
+    height: 700px;
+    max-height: 100%;
+    min-height: 20%;
+}
+.shot{
+    padding: 20px;
+}
+.dunk{
+    padding: 20px;
+}

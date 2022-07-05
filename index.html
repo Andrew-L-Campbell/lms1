@@ -1,0 +1,147 @@
+<!--
+Andrew Campbell
+LMS 1-League Home Page-Bootstrap
+06/22
+V1
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>LMS 1-League Home Page-Bootstrap</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script defer src="js/script.js"></script>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+
+    <body>
+        <div class="grid">
+            <div class="row" id="header">
+                <div class="col">
+                    <header>
+                        <nav class ="navbar bar ">
+                            <div class="container-fluid">
+            
+                                <ul ul class="nav col-md-10" id="myTab" role="presentation">
+                                    <li class="col-md-3 logoName" id="logo-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="logo" aria-selected="false">
+                                        <img src="/img/flag.jpg" alt="logo" width="30" height="24" class = "inlineTopText" alt="">
+                                        Higher Leagues
+                                    </li>
+                                    <li class="col-md-1" role="presentation">
+                                        <div class="navItemHome" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="false">Home</div>
+                                    </li>
+                                    <li class="col-md-1" role="presentation">
+                                        <div class="navItemTeams" id="teams-tab" data-bs-toggle="tab" data-bs-target="#teams" type="button" role="tab" aria-controls="teams" aria-selected="false">Teams</div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </nav>
+                    </header>
+                </div>
+             </div>
+             <div class="row middleSection">
+                <div class="col-3 " id="aside">
+                    <aside> 
+                        <div class="aside">
+                            <div >
+                                <p> league schedule or results
+                                </p>
+                            </div>
+                        </div>
+            
+            
+                    </aside>
+                </div>
+                <div class="col-9" id="main">
+                    <main>
+                        <div class="tab-content " id="myTabContent">
+                            <div class="tab-pane fade show active " id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <h1>Home</h1>
+                                <p>Hi Welcome to Higher Leagues. </p>
+                                <div class="homeImg ">
+                                    <div>
+                                        <img src="/img/dunk.jpg" alt="dunk" class=" container-fluid  dunk" >
+                                        <p>Come Dunk with Higher Leagues!</p>
+                                        <img src="/img/shot.jpg" alt="shot" class=" container-fluid  shot" >
+                                        <p>Making Every Shot Count.</p>
+                                    </div>
+      
+                                </div>
+
+                            </div>
+                            
+                            <div class="tab-pane fade" id="teams" role="tabpanel" aria-labelledby="teams-tab">
+                                <h1>Teams</h1>
+                                <p>This is my teams page</p>
+                                <table class="table table-striped teamsTable">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Team Name</th>
+                                        <th scope="col">Coach Name</th>
+                                        <th scope="col">Coach Phone</th>
+                                        <th scope="col"># of Players</th>
+                                        <th scope="col">Actions</th>
+                                      </tr>
+                                    </thead>
+                                
+                                    <tbody>
+                                        <tr>
+                                          <th scope="row">Awsome</th>
+                                          <td>Mark</td>
+                                          <td>801-888-8018</td>
+                                          <td>10</td>
+                                          <td><button class="btn btn-primary" data-bs-toggle="edit" data-bs-target="#edit">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                                                <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                                              </svg> Edit
+                                            </button>
+                                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-x" viewBox="0 0 16 16">
+                                                    <path d="M6.146 6.146a.5.5 0 0 1 .708 0L8 7.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 8l1.147 1.146a.5.5 0 0 1-.708.708L8 8.707 6.854 9.854a.5.5 0 0 1-.708-.708L7.293 8 6.146 6.854a.5.5 0 0 1 0-.708z"/>
+                                                    <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
+                                                  </svg> Delete
+                                            </button></td>
+                                        </tr>
+
+                                  </table>
+                            </div>
+            
+                        </div>
+                    </main>
+                </div>
+             </div>
+             <div class="row" id="footer">
+                <div class="col">
+                    <footer>
+                        <div>
+                            &copy; <em id="date"></em>Andrew Campbell
+                        </div>
+                    </footer>
+                </div>
+             </div>
+             <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="deleteModalLabel">Modal title</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body modalBody">
+                        <p>Are you sure you want to delete player?</p>
+                      
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Delete</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </body>
+
+</html>
